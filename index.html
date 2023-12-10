@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html><head>
+    <meta charset="utf-8" />
+    <title>Club Sports Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+.sidenav{
+  height: 100%;
+  width: 0;
+  position:absolute;
+  z-index: 1;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+body{
+  display:inline-block;
+}
+h1{
+  position: inherit;
+  display: inline-block;
+  text-align: center;
+  margin-left: 650px;
+  margin-right: auto;
+  width: 600px;
+}
+footer{
+  
+}
+span{
+  vertical-align: center;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 30px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="#">Newsletter</a>
+      <a href="#">Messages</a>
+      <a href="#">Calendar</a>
+      <a href="#">Schedule</a>
+      <a href="#">Highlights</a>
+      <a href="#">Training</a>
+      <a href="#">Sports</a>
+      <a href="#">Map</a>
+      <a href="#">Bank</a>
+      <a href="#">Store</a>
+      <a href="#">Print</a>
+      <a href="#">Settings</a>
+    </div>
+     
+<span style="font-size:40px;cursor:pointer; vertical-align: center; display: inline-block;" onclick="openNav()">&#9776;</span>
+      <script>
+        /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "240px";
+  document.getElementById("main").style.marginLeft = "240px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+}
+      </script>
+      <!-- Load icon library -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     
+      <h1>Club Sports</h1>
+
+
+<!-- The form -->
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search.." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+  </body>
+  <footer>
+  <p>Contact</p>
+  All Rights Reserved &copy Copyright 2023
+</footer>
+</html>
