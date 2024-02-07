@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Header Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="NavBar/Newsletter/index.html">Newsletter</a>
+      <a href="NavBar/Messages/index.html">Messages</a>
+      <a href="NavBar/Calendar/index.html">Calendar</a>
+      <a href="NavBar/Schedule/index.html">Schedule</a>
+      <a href="NavBar/Highlights/index.html">Highlights</a>
+      <a href="NavBar/Training/index.html">Training</a>
+      <a href="NavBar/Sports/index.html">Sports</a>
+      <a href="NavBar/Map/index.html">Map</a>
+      <a href="NavBar/Bank/index.html">Bank</a>
+      <a href="NavBar/Store/index.html">Store</a>
+      <a href="NavBar/Print/index.html">Print</a>
+      <a href="NavBar/Settings/index.html">Settings</a>
+    </div>
+    <header>
+     <!-- <button class="btn"><i class="fa fa-bars"></i></button>-->
+<nav button= cursor: pointer; onclick="openNav()">&#9776;
+  <script>
+  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "240px";
+    document.getElementById("main").style.marginLeft = "240px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+} 
+  </script>
+</nav> 
+  <h1 class="display-4">Welcome to the Club Sports</h1>
+<br />
+    <a href="index.html">
+     <img src="Images/ClubSportsLogo.jpeg"  class="logo" width="200" height="121" alt="Home" id="home-link">
+    </a> 
+
+    <div class="container">
+      <span class="dot" href="Members/Roster.DataAccess/headerindex.html" onclick=""="profilepicture"width="200" height="121" alt="profile" id="profile-link"></span>
+    </div>
+  </header>
+  <h4>Anthony J. Ingolia</h4>
+
+    <div>
+    <h3>Select an option:</h3>
+    <div class"optionList">
+      <div class="optionItem"><a href"~/RosterApplication/Index">Rosters</a></div>
+      </div>
+    </div>
+  </div>
+   
+
+<!-- The form -->
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search..." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+  <br />
+  <footer>
+  <p>Contact: Phil Harris (816)679-5071 phkcmsbl@aol.com</p><br>
+  <p>Anthony J. Ingolia (913)534-0932 clubsportsllc@gmail.com</p>
+  All Rights Reserved &copy 2024
+</footer>
+
+</html>

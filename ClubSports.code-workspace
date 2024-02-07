@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../welcome-to-docker"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "ClubSports"
+	}
+}

@@ -4,9 +4,10 @@
   position:absolute;
   z-index: 1;
   left: 0;
-  background-color:rgba(118, 114, 114, 0.596);
+  background-color: grey;
   overflow-x: hidden;
   transition: 0.5s;
+  padding-top: 40px;
 }
 
 .sidenav a {
@@ -14,32 +15,30 @@
   text-align: center;
   text-decoration: none;
   font-size: 25px;
-  color: #3ce9fe;
+  color: black;
   display: block;
   transition: 0.3s;
+  height: screen;
 }
 
-.sidenav a:hover{
-  color: red;
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
 .sidenav .closebtn {
   position: absolute;
-  color: white;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
 }
-h1{
-  
+.h1{
+  position: relative;
+  display: inline-block;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   width: 600px;
-}
-.h1 .welcome{
-text-align: center;
 }
 footer{
   text-align: center;
@@ -47,8 +46,11 @@ footer{
 span{
   vertical-align: center;
 }
+* {
+    box-sizing: border-box;
+  }
   .btn{
-    background-color: royalblue;
+    background-color: DodgerBlue;
   border: none;
   color: white;
   padding: 12px 16px;
@@ -71,18 +73,17 @@ span{
   
   /* Style the submit button */
   form.example button {
-    float: right;
+    float: left;
     width: 30%;
     padding: 10px;
-    background: #3ce9fe;
+    background: #2ce2fabb;
     color: white;
     font-size: 17px;
     border: 1px solid grey;
-    position: absolute;
   }
   
   form.example button:hover {
-    background: #2ce2fabb;
+    background: grey;
   }
   
   /* Clear floats */
@@ -92,27 +93,21 @@ span{
     display: table;
   }
   header{
-    width: screen;
+    width: 100%;
     background-color: hsl(0, 0%, 97%);
     padding: 10px o;
     text-align: center;
     position: relative;
-    width: auto;
-}
-.home{
-  text-align: center;
 }
 
-.home-link{
+#home-link{
     width: 200px;
   height: 121px;
   text-align: center;
 }
-#logo{
-  text-align: center;
-
+body {
+    font-family: Arial, sans-serif;
 }
-
 
 .profile {
     text-align: center;
@@ -120,7 +115,6 @@ span{
 }
 
 .profile img {
-    float:inherit;
     width: 150px;
     border-radius: 50%;
     text-align: center;
@@ -142,9 +136,18 @@ nav{
   text-align: center;
   cursor: pointer;
 }
-.body {
-  font-family: Arial, Helvetica, sans-serif;
+.dot {
+  text-align:center;
+  height: 250px;
+  width: 100px;
+  background-color: #0c0c0c;
+  border-radius: 50%;
+  vertical-align: top;
+  display: inline-block;
 }
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 100%;
@@ -163,9 +166,8 @@ input[type=text]:focus, input[type=password]:focus {
 
 /* Set a style for all buttons */
 button {
-  text-align: right;
-  background-color: #3ce9fe;
-  color: black;
+  background-color: royalblue;
+  color: white;
   padding: 14px 20px;
   margin: 8px 0;
   border: none;
@@ -181,42 +183,18 @@ button:hover {
 /* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #da2012f5;
+  background-color: #f44336;
 }
 
 /* Float cancel and signup buttons and add an equal width */
-.cancelbtn{
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  /*float: left;*/
+.cancelbtn, .signupbtn {
+  float: left;
   width: 50%;
-  text-align: center;
-}
-.signupbtn {
-  color: #2ce2fabb;
-  background-color: black;
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  /*float: left;*/
-  width: 50%;
-  text-align: center;
 }
 
 /* Add padding to container elements */
 .container {
-  padding: 20px;
-  text-align: center;
-
+  padding: 16px;
 }
 
 /* The Modal (background) */
@@ -235,17 +213,16 @@ button:hover {
 
 /* Modal Content/Box */
 .modal-content {
-  background-color: #6c69693b;
+  background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
 }
 
 /* Style the horizontal ruler */
-.label{
-  border: 1px solid grey;
+hr {
+  border: 1px solid #f1f1f1;
   margin-bottom: 25px;
-  padding: solid;
 }
  
 /* The Close Button (x) */
@@ -260,12 +237,10 @@ button:hover {
 
 .close:hover,
 .close:focus {
-  color: #ef1d0e;
+  color: #f44336;
   cursor: pointer;
 }
-.clearfix{
-  border: 1px solid #ccc;
-}
+
 /* Clear floats */
 .clearfix::after {
   content: "";
@@ -279,43 +254,7 @@ button:hover {
      width: 100%;
   }
 }
-.navbutton .img{
-  cursor: pointer;
-  text-align: center;
-  max-width: 100%;
-  height: auto;
-}
-.modal-content{
- border-style:solid;
-}
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
+.navbutton{
+  text-align: left;
   cursor: pointer;
 }
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-

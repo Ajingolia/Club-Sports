@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Header Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+</head>
+<header>
+  <nav>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="Nav/Newsletter/index.html">Newsletter</a>
+      <a href="Nav/Messages/index.html">Messages</a>
+      <a href="Nav/Calendar/index.html">Calendar</a>
+      <a href="Nav/Schedule/index.html">Schedule</a>
+      <a href="Nav/Highlights/index.html">Highlights</a>
+      <a href="Nav/Training/index.html">Training</a>
+      <a href="Nav/Sports/index.html">Sports</a>
+      <a href="Nav/Map/index.html">Map</a>
+      <a href="Nav/Bank/index.html">Bank</a>
+      <a href="Nav/Store/index.html">Store</a>
+      <a href="Nav/Print/index.html">Print</a>
+      <a href="Nav/Settings/index.html">Settings</a>
+    
+  
+      </div><script>
+  /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "240px";
+    document.getElementById("main").style.marginLeft = "240px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+} 
+  </script>
+<h1 class="welcome">Welcome to Club Sports!</h1>
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in/Sign up</button>
+  <div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <label for="firstName"><b>First Name:</b></label>
+      <input type="text" placeholder="Anthony" name="firstName" required>
+
+      <label for="middleName"><b>Middle Name:</b></label>
+      <input type="text" placeholder="Joseph" name="middleName" required>
+
+      <label for="lastName"><b>Last Name:</b></label>
+      <input type="text" placeholder="Ingolia" name="lastName" required>
+
+      <label for="sex"><b>Sex:</b></label>
+      <input type="text" placeholder="Male/Female" name="sex" required>
+
+      <label for="birthday"><b>Birthday:</b></label>
+
+      <br />
+
+      <input type="date" placeholder="21" name="birthday" required>
+      <br />
+      <br />
+      <label for="email"><b>Email:</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      
+      <label for="phone"><b>Phone Number:</b></label><br><br>
+      <input type="tel" id="phone" name="phone" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+      
+      <label for="country"><b>Country:</b></label>
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+      </select>
+    
+      <label for="usAddress"><b>Street Address:</b></label><br><br>
+      <input type="text" id="street" name="street" placeholder="14542 South Hagan Street" pattern="[0-9]{}-[0-9]{3}-[0-9]{4}" required><br><br>
+      
+      <label for="zipcode"><b>Zip Code:</b></label><br><br>
+      <input type="tel" id="zipcode" name="zipcode" placeholder="123-456-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+    
+      <label for="city"><b>City:</b></label><br><br>
+      <input type="text" id="city" name="city" placeholder="Olathe" required><br><br>
+    
+      <label for="state"><b>State:</b></label><br><br>
+      <input type="text" id="state" name="state" placeholder="Kansas" required><br><br>
+      
+      <label for="county"><b>County:</b></label><br><br>
+      <input type="text" id="county" name="county" placeholder="Johnson County" required><br><br>
+    
+      <label for="region"><b>Region:</b></label><br><br>
+      <input type="text" id="region" name="region" placeholder="MidWest" required><br><br>
+      
+      <label for="ssn"><b>Social Security Number:</b></label><br><br>
+      <input type="text" id="ssn" name="ssn" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+      
+      <label for="user"><b>Username:</b></label><br><br>
+      <input type="text" placeholder="Create Username" name="user" required><br><br>
+
+      <label for="psw"><b>Password:</b></label>
+      <input type="text" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Confirm Password</b></label>
+      <input type="text" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="submit" class="signupbtn">Sign Up</button>
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      </div>
+    </div>
+  </form>
+
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+     modal.style.display = "none";
+   }
+  }
+  </script>
+</nav>
+    </header>
+      <br />
+ 
+    <div class="container">
+    </div>
+  <h4>Anthony J. Ingolia</h4>
+
+    <div>
+    <h3>Select an option:</h3>
+    <div class="optionList">
+      <div class="optionItem"><a href"~/RosterApplication/Index">Rosters</a></div>
+      </div>
+    </div>
+  </div>
+  <body>
+
+  
+
+<!-- The form -->
+<form class="example" action="action_page.php">
+  <input type="text" placeholder="Search..." name="search">
+  <button type="submit"><i class="fa fa-search"></i></button>
+</form>
+</body>
+  <br />
+  <footer>
+  <p>Contact: Phil Harris (816)679-5071 phkcmsbl@aol.com</p><br>
+  <p>Anthony J. Ingolia (913)534-0932 clubsportsllc@gmail.com</p>
+  All Rights Reserved &copy 2024
+</footer>
+
+</html>
